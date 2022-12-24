@@ -13,12 +13,12 @@ specifiers:
 dependencies:
   '@fastify/cors': 8.2.0
   '@fastify/postgres': 5.2.0_pg@8.8.0
-  dotenv: 16.0.3
   fastify: 4.10.2
   pg: 8.8.0
   uuid: 9.0.0
 
 devDependencies:
+  dotenv: 16.0.3
   nodemon: 2.0.20
   prettier: 2.8.1
 
@@ -217,7 +217,7 @@ packages:
   /dotenv/16.0.3:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
-    dev: false
+    dev: true
 
   /event-target-shim/5.0.1:
     resolution: {integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==}
