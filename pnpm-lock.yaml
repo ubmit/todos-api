@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@fastify/cors': ^8.2.0
   '@fastify/postgres': ^5.2.0
+  '@guilhermedeandrade/prettier-config': ^1.0.0
   dotenv: ^16.0.3
   fastify: ^4.10.2
   nodemon: ^2.0.20
@@ -18,6 +19,7 @@ dependencies:
   uuid: 9.0.0
 
 devDependencies:
+  '@guilhermedeandrade/prettier-config': 1.0.0
   dotenv: 16.0.3
   nodemon: 2.0.20
   prettier: 2.8.1
@@ -61,6 +63,10 @@ packages:
       fastify-plugin: 4.4.0
       pg: 8.8.0
     dev: false
+
+  /@guilhermedeandrade/prettier-config/1.0.0:
+    resolution: {integrity: sha512-8Y8dHdA9Dg+mFfzWvl5a7+l81gyBuEHSXvB1M1oCRXtwOFqu0VfK6ibLOZ6JU+BgJxKYrDOkg8dksEb7iruUTA==}
+    dev: true
 
   /abbrev/1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
