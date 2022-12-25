@@ -17,13 +17,25 @@ fastify.get("/todos", (req, reply) => {
   });
 });
 
+fastify.get("/todos/:id", (req, reply) => {
+  fastify.pg.query(
+    "SELECT * FROM todos WHERE id=$1",
+    [req.params.id],
+    function onResult(err, result) {
+      const [todo] = result.rows;
+      reply.send(err || todo);
+    }
+  );
+});
+
 fastify.post("/todos", (req, reply) => {
-  let id = uuidv4();
+  const id = uuidv4();
   fastify.pg.query(
     "INSERT INTO todos (id, completed, title) VALUES ($1, $2, $3) RETURNING *",
     [id, req.body.completed, req.body.title],
     function onResult(err, result) {
-      reply.send(err || result.rows);
+      const [todo] = result.rows;
+      reply.send(err || todo);
     }
   );
 });
